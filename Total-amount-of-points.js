@@ -36,6 +36,8 @@ function points(games) {
   return total;
 }
 
+// or
+
 function points(games) {
   let totalPoints = 0;
 
