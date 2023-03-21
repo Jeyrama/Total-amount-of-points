@@ -36,6 +36,20 @@ function points(games) {
   return total;
 }
 
+function points(games) {
+  let totalPoints = 0;
+
+  for(i = 0; i < games.length; i++) {
+    let xScore = Number(games[i].charAt(0));
+    let yScore = Number(games[i].charAt(2));
+
+    if (xScore > yScore) {totalPoints += 3;}
+    if (xScore < yScore) {totalPoints += 0;}
+    if (xScore === yScore) {totalPoints += 1;}
+  }
+  return totalPoints;
+}
+
 
 
 
